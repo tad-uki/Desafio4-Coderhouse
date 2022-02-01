@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: grid;
+
+    grid-template-areas: 
+    "head   head   head   head"
+    "menu   main   main   main"
+    "menu   dato   dato   aside"
+    "menu   sedes  sedes  aside"
+    "footer footer footer footer"
+    ;
+
+    width: 100%;
+    height: 120vh;
+    grid-template-columns: 15% 35% 29% 21%;
+    grid-template-rows: 310px 600px 400px 400px 200px;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+header{
+    grid-area: head;
+    border: 1px solid black;
+    background-color: rgb(20, 104, 3);
+    color: rgb(216, 211, 211);
+    text-align: center;
+}
+
+h1{
+    font-size: 4cm;
+    letter-spacing: 5px;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.subtitulo{
+    font-size: 60px;
+    font-style: italic;
+    font-family: 'Outfit', sans-serif;
+}
+
+nav{
+    grid-area: menu;
+    border: 1px solid black;
+    background-color: rgb(238, 238, 137);
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    font-family: 'Outfit', sans-serif;
+    
+}
+
+.menu{
+    font-size: 90px;
+    color:rgb(29, 0, 109);
+    text-decoration-line: underline;
+    margin-left: 30px;
+}
+
+.item{
+    background-color: rgb(184, 87, 48);
+    font-size: 30px;
+    color: rgb(30, 173, 240);
+    text-align: center;
+    border: 5px solid black;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+main{
+    grid-area: main;
+    border: 1px solid black;
+    background-color: yellowgreen;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    
+}
+
+.mainItem{
+    margin: 40px;
+    font-size: 40px;
+}
+
+
+#dato{
+    grid-area: dato;
+    border: 1px solid black;
+    background-color: tomato;
+
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between;
+}
+
+.datoItem{
+    margin: 40px;
+    font-size: 30px;
+}
+
+#sedes{
+    grid-area: sedes;
+    border: 1px solid black;
+    background-color: rgb(126, 167, 245);
+    color: black;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.sedesItem{
+    margin: 40px;
+    font-size: 30px;
+}
+
+
+aside{
+    grid-area: aside;
+    border: 1px solid black;
+    background-color: wheat;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.asideItem{
+    margin: 40px;
+    font-size: 30px;
+}
+
+h3{
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+}
+
+footer{
+    grid-area: footer;
+    border: 1px solid black;
+    font-size: 40px;
+    background-color: black;
+    color: white;
+}
+
+.mail{
+    font-size: 60px;
+    text-decoration-line: underline;
+}
